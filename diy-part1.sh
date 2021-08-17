@@ -8,7 +8,7 @@
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default                                  #kenzok8软件库
 # echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default                                             #kenzok8软件库依赖
 echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default                           #易有云 luci-app-ddnsto和luci-app-linkease
-echo 'patch -p1 < add-patch_dts_file-wifi-xradio.patch' >> feeds.conf.default
+patch -p1 < add-patch_dts_file-wifi-xradio.patch
 
 git clone https://github.com/esirplayground/luci-app-poweroff.git package/lean/luci-app-poweroff                       #关机
 # git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/lean/luci-theme-edge                      #主题-edge-动态登陆界面
